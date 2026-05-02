@@ -1,6 +1,0 @@
-- name: install mongdb
-  hosts: mongodb
-  become: yes
-  roles:
-    - mongodb
-    
