@@ -7,6 +7,10 @@
   include_role:
     name: common
     tasks_from: app-setup
+    
+- name: install dependencies
+  community.general.npm:
+    path: /app
 
 - name: "{{ component}} service setup and restart"
   include_role:
